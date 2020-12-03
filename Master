@@ -1,7 +1,468 @@
 --Yooo, ima not obfuscate because 1, i suck at it, and 2, you are allowed to take from me lol since i took from others. Enjoy!
 
---pee test
-while true do
-warn("niggas in my butthole")
-wait(1)
-end)
+local BlueADMIN = Instance.new("ScreenGui")
+local Main = Instance.new("ImageLabel")
+local Title = Instance.new("TextLabel")
+local Title_Roundify_3px = Instance.new("ImageLabel")
+local TitleCmds = Instance.new("TextLabel")
+local Commands = Instance.new("ScrollingFrame")
+local UIListLayout = Instance.new("UIListLayout")
+local check = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+local script = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local credit = Instance.new("TextLabel")
+local TextLabel_3 = Instance.new("TextLabel")
+local infyield = Instance.new("TextLabel")
+local TextLabel_4 = Instance.new("TextLabel")
+local emotes = Instance.new("TextLabel")
+local TextLabel_5 = Instance.new("TextLabel")
+local chathax = Instance.new("TextLabel")
+local TextLabel_6 = Instance.new("TextLabel")
+local chatbypass = Instance.new("TextLabel")
+local TextLabel_7 = Instance.new("TextLabel")
+local afk = Instance.new("TextLabel")
+local TextLabel_8 = Instance.new("TextLabel")
+local equip = Instance.new("TextLabel")
+local TextLabel_9 = Instance.new("TextLabel")
+local bright = Instance.new("TextLabel")
+local TextLabel_10 = Instance.new("TextLabel")
+local aimbot = Instance.new("TextLabel")
+local TextLabel_11 = Instance.new("TextLabel")
+local CmdBOX = Instance.new("TextBox")
+local Frame = Instance.new("ImageLabel")
+local Frame_2 = Instance.new("ImageLabel")
+local Frame_3 = Instance.new("Frame")
+local CmdBack = Instance.new("ImageLabel")
+local GameCheck = Instance.new("TextLabel")
+
+--Properties:
+
+BlueADMIN.Name = "BlueADMIN"
+BlueADMIN.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Main.Name = "Main"
+Main.Parent = BlueADMIN
+Main.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Main.BackgroundTransparency = 1.000
+Main.Position = UDim2.new(0.324516118, 0, 0.151296824, 0)
+Main.Size = UDim2.new(0, 400, 0, 255)
+Main.Image = "rbxassetid://3570695787"
+Main.ImageColor3 = Color3.fromRGB(45, 45, 45)
+Main.ScaleType = Enum.ScaleType.Slice
+Main.SliceCenter = Rect.new(100, 100, 100, 100)
+Main.SliceScale = 0.030
+
+Title.Name = "Title"
+Title.Parent = Main
+Title.BackgroundColor3 = Color3.fromRGB(74, 131, 255)
+Title.BackgroundTransparency = 1.000
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 400, 0, 25)
+Title.ZIndex = 2
+Title.Font = Enum.Font.PermanentMarker
+Title.Text = "Blue Admin"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextSize = 25.000
+
+Title_Roundify_3px.Name = "Title_Roundify_3px"
+Title_Roundify_3px.Parent = Title
+Title_Roundify_3px.AnchorPoint = Vector2.new(0.5, 0.5)
+Title_Roundify_3px.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_Roundify_3px.BackgroundTransparency = 1.000
+Title_Roundify_3px.Position = UDim2.new(0.5, 0, 0.5, 0)
+Title_Roundify_3px.Size = UDim2.new(1, 0, 1, 0)
+Title_Roundify_3px.Image = "rbxassetid://3570695787"
+Title_Roundify_3px.ImageColor3 = Color3.fromRGB(74, 131, 255)
+Title_Roundify_3px.ScaleType = Enum.ScaleType.Slice
+Title_Roundify_3px.SliceCenter = Rect.new(100, 100, 100, 100)
+Title_Roundify_3px.SliceScale = 0.030
+
+TitleCmds.Name = "TitleCmds"
+TitleCmds.Parent = Main
+TitleCmds.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TitleCmds.BackgroundTransparency = 1.000
+TitleCmds.BorderSizePixel = 0
+TitleCmds.Position = UDim2.new(0.25, 0, 0.143146411, 0)
+TitleCmds.Size = UDim2.new(0, 200, 0, 16)
+TitleCmds.Font = Enum.Font.LuckiestGuy
+TitleCmds.Text = "Commands"
+TitleCmds.TextColor3 = Color3.fromRGB(255, 255, 255)
+TitleCmds.TextSize = 20.000
+
+Commands.Name = "Commands"
+Commands.Parent = Main
+Commands.Active = true
+Commands.BackgroundColor3 = Color3.fromRGB(35, 35, 35)
+Commands.BackgroundTransparency = 1.000
+Commands.BorderSizePixel = 0
+Commands.Position = UDim2.new(0.0250000004, 0, 0.234515786, 0)
+Commands.Size = UDim2.new(0, 380, 0, 150)
+Commands.ZIndex = 5
+Commands.BottomImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+Commands.CanvasPosition = Vector2.new(0, 355)
+Commands.CanvasSize = UDim2.new(0, 0, 1, 250)
+Commands.ScrollBarThickness = 5
+Commands.TopImage = "rbxasset://textures/ui/Scroll/scroll-middle.png"
+
+UIListLayout.Parent = Commands
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.Padding = UDim.new(0, 25)
+
+check.Name = "check"
+check.Parent = Commands
+check.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+check.BorderSizePixel = 0
+check.Position = UDim2.new(0.032894738, 0, 0, 0)
+check.Size = UDim2.new(0, 355, 0, 30)
+check.ZIndex = 5
+check.Font = Enum.Font.GothamBold
+check.Text = " ;Check"
+check.TextColor3 = Color3.fromRGB(255, 255, 255)
+check.TextSize = 14.000
+
+TextLabel.Parent = check
+TextLabel.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0, 0, 1, 0)
+TextLabel.Size = UDim2.new(0, 355, 0, 20)
+TextLabel.ZIndex = 5
+TextLabel.Font = Enum.Font.Gotham
+TextLabel.Text = "Checks if the game is supported."
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+script.Name = "script"
+script.Parent = Commands
+script.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+script.BorderSizePixel = 0
+script.Position = UDim2.new(0.032894738, 0, 0, 0)
+script.Size = UDim2.new(0, 355, 0, 30)
+script.ZIndex = 5
+script.Font = Enum.Font.GothamBold
+script.Text = ";Script"
+script.TextColor3 = Color3.fromRGB(255, 255, 255)
+script.TextSize = 14.000
+
+TextLabel_2.Parent = script
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_2.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_2.ZIndex = 5
+TextLabel_2.Font = Enum.Font.Gotham
+TextLabel_2.Text = "Inserts the script that fits with this game."
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+credit.Name = "credit"
+credit.Parent = Commands
+credit.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+credit.BorderSizePixel = 0
+credit.Position = UDim2.new(0.032894738, 0, 0, 0)
+credit.Size = UDim2.new(0, 355, 0, 30)
+credit.ZIndex = 5
+credit.Font = Enum.Font.GothamBold
+credit.Text = ";Credit"
+credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+credit.TextSize = 14.000
+
+TextLabel_3.Parent = credit
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_3.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_3.ZIndex = 5
+TextLabel_3.Font = Enum.Font.Gotham
+TextLabel_3.Text = "The person that made this script."
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 14.000
+TextLabel_3.TextWrapped = true
+
+infyield.Name = "infyield"
+infyield.Parent = Commands
+infyield.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+infyield.BorderSizePixel = 0
+infyield.Position = UDim2.new(0.032894738, 0, 0, 0)
+infyield.Size = UDim2.new(0, 355, 0, 30)
+infyield.ZIndex = 5
+infyield.Font = Enum.Font.GothamBold
+infyield.Text = ";Yield"
+infyield.TextColor3 = Color3.fromRGB(255, 255, 255)
+infyield.TextSize = 14.000
+
+TextLabel_4.Parent = infyield
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_4.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_4.ZIndex = 5
+TextLabel_4.Font = Enum.Font.Gotham
+TextLabel_4.Text = "Inserts Infinite Yield into the game."
+TextLabel_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.TextSize = 14.000
+TextLabel_4.TextWrapped = true
+
+emotes.Name = "emotes"
+emotes.Parent = Commands
+emotes.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+emotes.BorderSizePixel = 0
+emotes.Position = UDim2.new(0.032894738, 0, 0, 0)
+emotes.Size = UDim2.new(0, 355, 0, 30)
+emotes.ZIndex = 5
+emotes.Font = Enum.Font.GothamBold
+emotes.Text = ";Emotes"
+emotes.TextColor3 = Color3.fromRGB(255, 255, 255)
+emotes.TextSize = 14.000
+
+TextLabel_5.Parent = emotes
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_5.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_5.ZIndex = 5
+TextLabel_5.Font = Enum.Font.Gotham
+TextLabel_5.Text = "Allows you to chat emotes like in discord."
+TextLabel_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.TextSize = 14.000
+TextLabel_5.TextWrapped = true
+
+chathax.Name = "chathax"
+chathax.Parent = Commands
+chathax.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+chathax.BorderSizePixel = 0
+chathax.Position = UDim2.new(0.032894738, 0, 0, 0)
+chathax.Size = UDim2.new(0, 355, 0, 30)
+chathax.ZIndex = 5
+chathax.Font = Enum.Font.GothamBold
+chathax.Text = ";ChatHaxx"
+chathax.TextColor3 = Color3.fromRGB(255, 255, 255)
+chathax.TextSize = 14.000
+
+TextLabel_6.Parent = chathax
+TextLabel_6.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_6.BorderSizePixel = 0
+TextLabel_6.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_6.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_6.ZIndex = 5
+TextLabel_6.Font = Enum.Font.Gotham
+TextLabel_6.Text = "FE Chat Haxx."
+TextLabel_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_6.TextSize = 14.000
+TextLabel_6.TextWrapped = true
+
+chatbypass.Name = "chatbypass"
+chatbypass.Parent = Commands
+chatbypass.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+chatbypass.BorderSizePixel = 0
+chatbypass.Position = UDim2.new(0.032894738, 0, 0, 0)
+chatbypass.Size = UDim2.new(0, 355, 0, 30)
+chatbypass.ZIndex = 5
+chatbypass.Font = Enum.Font.GothamBold
+chatbypass.Text = ";Bypass"
+chatbypass.TextColor3 = Color3.fromRGB(255, 255, 255)
+chatbypass.TextSize = 14.000
+
+TextLabel_7.Parent = chatbypass
+TextLabel_7.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_7.BorderSizePixel = 0
+TextLabel_7.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_7.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_7.ZIndex = 5
+TextLabel_7.Font = Enum.Font.Gotham
+TextLabel_7.Text = "Chat bypass. (A bit broken.)"
+TextLabel_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_7.TextSize = 14.000
+TextLabel_7.TextWrapped = true
+
+afk.Name = "afk"
+afk.Parent = Commands
+afk.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+afk.BorderSizePixel = 0
+afk.Position = UDim2.new(0.032894738, 0, 0, 0)
+afk.Size = UDim2.new(0, 355, 0, 30)
+afk.ZIndex = 5
+afk.Font = Enum.Font.GothamBold
+afk.Text = ";AFK"
+afk.TextColor3 = Color3.fromRGB(255, 255, 255)
+afk.TextSize = 14.000
+
+TextLabel_8.Parent = afk
+TextLabel_8.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_8.BorderSizePixel = 0
+TextLabel_8.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_8.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_8.ZIndex = 5
+TextLabel_8.Font = Enum.Font.Gotham
+TextLabel_8.Text = "Allows you to AFK without getting kicked."
+TextLabel_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_8.TextSize = 14.000
+TextLabel_8.TextWrapped = true
+
+equip.Name = "equip"
+equip.Parent = Commands
+equip.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+equip.BorderSizePixel = 0
+equip.Position = UDim2.new(0.032894738, 0, 0, 0)
+equip.Size = UDim2.new(0, 355, 0, 30)
+equip.ZIndex = 5
+equip.Font = Enum.Font.GothamBold
+equip.Text = ";Equip"
+equip.TextColor3 = Color3.fromRGB(255, 255, 255)
+equip.TextSize = 14.000
+
+TextLabel_9.Parent = equip
+TextLabel_9.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_9.BorderSizePixel = 0
+TextLabel_9.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_9.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_9.ZIndex = 5
+TextLabel_9.Font = Enum.Font.Gotham
+TextLabel_9.Text = "Equips all tools."
+TextLabel_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_9.TextSize = 14.000
+TextLabel_9.TextWrapped = true
+
+bright.Name = "bright"
+bright.Parent = Commands
+bright.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+bright.BorderSizePixel = 0
+bright.Position = UDim2.new(0.032894738, 0, 0, 0)
+bright.Size = UDim2.new(0, 355, 0, 30)
+bright.ZIndex = 5
+bright.Font = Enum.Font.GothamBold
+bright.Text = ";Bright"
+bright.TextColor3 = Color3.fromRGB(255, 255, 255)
+bright.TextSize = 14.000
+
+TextLabel_10.Parent = bright
+TextLabel_10.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_10.BorderSizePixel = 0
+TextLabel_10.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_10.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_10.ZIndex = 5
+TextLabel_10.Font = Enum.Font.Gotham
+TextLabel_10.Text = "Toggles Full Bright and no Fog."
+TextLabel_10.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_10.TextSize = 14.000
+TextLabel_10.TextWrapped = true
+
+aimbot.Name = "aimbot"
+aimbot.Parent = Commands
+aimbot.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+aimbot.BorderSizePixel = 0
+aimbot.Position = UDim2.new(0.032894738, 0, 0, 0)
+aimbot.Size = UDim2.new(0, 355, 0, 30)
+aimbot.ZIndex = 5
+aimbot.Font = Enum.Font.GothamBold
+aimbot.Text = ";Aimbot"
+aimbot.TextColor3 = Color3.fromRGB(255, 255, 255)
+aimbot.TextSize = 14.000
+
+TextLabel_11.Parent = aimbot
+TextLabel_11.BackgroundColor3 = Color3.fromRGB(40, 40, 40)
+TextLabel_11.BorderSizePixel = 0
+TextLabel_11.Position = UDim2.new(0, 0, 1, 0)
+TextLabel_11.Size = UDim2.new(0, 355, 0, 20)
+TextLabel_11.ZIndex = 5
+TextLabel_11.Font = Enum.Font.Gotham
+TextLabel_11.Text = "Inserts an aimbot GUI. (Note, its very basic)"
+TextLabel_11.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_11.TextSize = 14.000
+TextLabel_11.TextWrapped = true
+
+CmdBOX.Name = "CmdBOX"
+CmdBOX.Parent = Main
+CmdBOX.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+CmdBOX.BorderSizePixel = 0
+CmdBOX.Position = UDim2.new(0.0799999982, 0, 0.851000011, 0)
+CmdBOX.Size = UDim2.new(0, 345, 0, 35)
+CmdBOX.ZIndex = 2
+CmdBOX.Font = Enum.Font.Code
+CmdBOX.PlaceholderColor3 = Color3.fromRGB(213, 213, 213)
+CmdBOX.PlaceholderText = "Commands Here"
+CmdBOX.Text = ""
+CmdBOX.TextColor3 = Color3.fromRGB(255, 255, 255)
+CmdBOX.TextSize = 14.000
+CmdBOX.TextWrapped = true
+CmdBOX.TextXAlignment = Enum.TextXAlignment.Left
+
+Frame.Name = "Frame"
+Frame.Parent = CmdBOX
+Frame.BackgroundColor3 = Color3.fromRGB(74, 131, 255)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(-0.06349691, 0, 0, 0)
+Frame.Size = UDim2.new(0, 30, 0, 35)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(74, 131, 255)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.030
+
+Frame_2.Name = "Frame"
+Frame_2.Parent = CmdBOX
+Frame_2.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame_2.BackgroundTransparency = 1.000
+Frame_2.Position = UDim2.new(0.979522169, 0, 0, 0)
+Frame_2.Size = UDim2.new(0, 20, 0, 35)
+Frame_2.Image = "rbxassetid://3570695787"
+Frame_2.ImageColor3 = Color3.fromRGB(34, 34, 34)
+Frame_2.ScaleType = Enum.ScaleType.Slice
+Frame_2.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame_2.SliceScale = 0.030
+
+Frame_3.Parent = CmdBOX
+Frame_3.BackgroundColor3 = Color3.fromRGB(34, 34, 34)
+Frame_3.BorderSizePixel = 0
+Frame_3.Position = UDim2.new(-0.0272650234, 0, 0, 0)
+Frame_3.Size = UDim2.new(0, 9, 0, 35)
+
+CmdBack.Name = "CmdBack"
+CmdBack.Parent = Main
+CmdBack.AnchorPoint = Vector2.new(0.5, 0.5)
+CmdBack.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CmdBack.BackgroundTransparency = 1.000
+CmdBack.Position = UDim2.new(0.5, 0, 0.527232945, 0)
+CmdBack.Size = UDim2.new(0.935000002, 6, 0.568291366, 6)
+CmdBack.Image = "rbxassetid://3570695787"
+CmdBack.ImageColor3 = Color3.fromRGB(35, 35, 35)
+CmdBack.ScaleType = Enum.ScaleType.Slice
+CmdBack.SliceCenter = Rect.new(100, 100, 100, 100)
+CmdBack.SliceScale = 0.030
+
+GameCheck.Name = "GameCheck"
+GameCheck.Parent = Main
+GameCheck.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameCheck.BackgroundTransparency = 1.000
+GameCheck.BorderSizePixel = 0
+GameCheck.Position = UDim2.new(0.680000007, 0, 0.0980392173, 0)
+GameCheck.Size = UDim2.new(0, 117, 0, 33)
+GameCheck.Font = Enum.Font.Gotham
+GameCheck.Text = "Game not found!"
+GameCheck.TextColor3 = Color3.fromRGB(255, 7, 19)
+GameCheck.TextSize = 14.000
+
+-- Scripts:
+
+local function CANITG_fake_script() -- BlueADMIN.Local 
+	local script = Instance.new('LocalScript', BlueADMIN)
+
+	local Visible = true
+	local Focus = nil
+	local Cmd = script.Parent.Main.CmdBOX
+	game.Players.LocalPlayer:GetMouse().KeyDown:connect(function(key)
+		if key == ";" then
+			if Visible == true then
+				script.Parent.Main.Visible = false
+				Visible = false
+			elseif Visible == false then
+				script.Parent.Main.Visible = true
+				Visible = true
+			end
+		end
+	end)
+end
+coroutine.wrap(CANITG_fake_script)()
